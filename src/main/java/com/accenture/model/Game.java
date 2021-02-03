@@ -26,7 +26,11 @@ import java.util.Set;
 
 @Getter
 @Setter
-@ToString
+@ToString(exclude = {
+    "players",
+    "questions",
+    "rules"
+})
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -40,7 +44,7 @@ public class Game implements Serializable {
   private Long id;
 
   @Column(name = "master_id")
-  private Long MasterId;
+  private Long masterId;
 
   @Column(name = "code")
   private String code;
@@ -53,7 +57,7 @@ public class Game implements Serializable {
   private String hit;
 
   @OneToMany(mappedBy = "game", cascade = CascadeType.REMOVE)
-  private Set<Rules> rules;
+  private Rules rules;
 
   @ManyToMany(cascade = {
       CascadeType.MERGE,
