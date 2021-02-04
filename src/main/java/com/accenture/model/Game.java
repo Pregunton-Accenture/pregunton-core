@@ -19,6 +19,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.List;
@@ -56,7 +57,8 @@ public class Game implements Serializable {
   @Column(name = "hit")
   private String hit;
 
-  @OneToMany(mappedBy = "game", cascade = CascadeType.REMOVE)
+  @OneToOne
+  @JoinColumn(name = "rules_id")
   private Rules rules;
 
   @ManyToMany(cascade = {
