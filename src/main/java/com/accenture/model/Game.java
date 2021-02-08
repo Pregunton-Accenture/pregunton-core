@@ -1,5 +1,6 @@
 package com.accenture.model;
 
+import com.accenture.pojo.GameStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,6 +11,8 @@ import lombok.ToString;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -60,6 +63,10 @@ public class Game implements Serializable {
   @OneToOne
   @JoinColumn(name = "rules_id")
   private Rules rules;
+
+  @Column(name = "status")
+  @Enumerated(EnumType.STRING)
+  private GameStatus status;
 
   @ManyToMany(cascade = {
       CascadeType.MERGE,
