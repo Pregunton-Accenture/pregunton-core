@@ -47,8 +47,8 @@ public class Game implements Serializable {
   @Column(name = "id")
   private Long id;
 
-  @Column(name = "master_id")
-  private Long masterId;
+  @Column(name = "master")
+  private String master;
 
   @Column(name = "code")
   private String code;

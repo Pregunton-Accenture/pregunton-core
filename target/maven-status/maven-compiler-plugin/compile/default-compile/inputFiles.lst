@@ -3,11 +3,11 @@ D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\model\Pl
 D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\model\Category.java
 D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\pojo\Answer.java
 D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\pojo\GameDto.java
+D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\pojo\GameStatus.java
 D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\pojo\HitDto.java
-D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\pojo\RuleDto.java
 D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\model\Game.java
 D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\model\Question.java
-D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\pojo\request\PlayerRequestDto.java
-D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\model\Rule.java
+D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\pojo\RulesDto.java
 D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\pojo\QuestionDto.java
+D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\model\Rules.java
 D:\Marco\Documents\Accenture\pregunton-core\src\main\java\com\accenture\pojo\PlayerDto.java
