@@ -1,4 +1,4 @@
-###### Pregunton-Core
+# Pregunton-Core
 
 * [Description](#description)
 * [Prerequisites](#prerequisites)
