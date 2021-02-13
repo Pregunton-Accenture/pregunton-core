@@ -4,12 +4,16 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Getter
 @Setter
 public class QuestionDto implements Serializable {
+
+  @ApiModelProperty(notes = "The question id.", name = "id")
+  private Long id;
 
   @ApiModelProperty(notes = "The question that the player asked.", name = "question", required = true)
   @NotNull(message = "The hit limit of the player cannot be missing or empty")
