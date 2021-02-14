@@ -14,7 +14,7 @@ import java.util.Set;
 public class GameDto implements Serializable {
 
   @ApiModelProperty(notes = "The answer of the right guess", name = "hit", required = true)
-  @NotNull(message = "The user id cannot be missing or empty")
+  @NotNull(message = "The hit of the game cannot be missing or empty")
   private String hit;
 
   @ApiModelProperty(notes = "The rules of the game", name = "rules", required = true)
